@@ -1,5 +1,5 @@
 from __future__ import division
-#import spidev
+import spidev
 
 
 
@@ -9,7 +9,7 @@ class MCP3002(object): #The MCP3002 class inherits from the object class
         #A subclass will read a config file and extract all relevant information
 
         self.SPIChannel = SPIChannel
-        self.referenceVoltage = 5.0
+        self.referenceVoltage = referenceVoltage
         
 
     def readChannel0(self):
